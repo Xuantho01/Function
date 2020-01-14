@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convert Metter to Feet</title>
+</head>
+<body>
+     <label>METTER</label>
+     <input type="number" id="metter" onchange="metterConvert(this.value)">
+     <label>FEET</label>
+     <input type="number" id="feet" onchange="feetConvert(this.value)">
+</body>
+<script>
+    function metterConvert(Metter){
+        Metter = parseFloat(Metter);
+        document.getElementById("feet").value = 3.279*Metter;
+    }
+    function feetConvert(Feet){
+        Feet = parseFloat(Feet);
+        document.getElementById("metter").value = 0.305*Feet;
+    }
+</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check prime</title>
+</head>
+<body>
+    <h3>check Prime</h3>
+</body>
+<script>
+    function checkPrime(number){
+        let flag = true;
+        if(number < 2){
+            flag = false;
+        }
+        else if(number == 2){
+            flag = true;
+        }
+        else if(number % 2 == 0){
+            flag = false;
+        }
+        else{
+            for(let i = 3; i < number-1; i+=2){
+                if(number % i == 0){
+                    flag = false;
+                    break;
+                }
+            }
+            //return true;
+        }
+        return flag;
+    }
+    let numberIn = parseInt(prompt("Enter number need to check: "));
+    if (checkPrime(numberIn))
+        alert("la so nguyen to");
+    else
+        alert("Khong là số nguyên tố");
+    // let checkNumber = checkPrime(numberIn);
+</script>
+</html>

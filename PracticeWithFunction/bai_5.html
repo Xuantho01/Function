@@ -6,15 +6,17 @@
 </head>
 <body>
 <script>
-    function checkValueOfArray(arr){
-        for(let i = 0; i < arr.length;i++){
-            flag = true;
-            if()
-        }
+    function checkValueOfArray(starName){
+       let i = starArray.indexOf(starName);
+       if( i < 0)
+           alert("not found name of star or input has not been entered!");
+       else
+           alert(conStellaTionArray[i]);
     }
-    let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe'];
-    let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major','Leo'];
-
+    let starName = prompt("Nhập vào tên ngôi sao: ");
+    let starArray = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe'];
+    let conStellaTionArray = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major','Leo'];
+    checkValueOfArray(starName);
 </script>
 </body>
 </html>

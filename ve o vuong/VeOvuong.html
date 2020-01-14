@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+</head>
+<body>
+<script>
+   function drawRectangle(width,heigh){
+       let arr = new Array(width);
+       for(let i = 0; i < width; i++){
+           arr[i] = new Array(heigh);
+           for(let j = 0; j < heigh; j++){
+                arr[i][j] = "*";
+                document.write(arr);
+           }
+       }
+   }
+   drawRectangle(3,4);
+</script>
+</body>
+</html>

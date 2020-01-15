@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>find Max value of number</title>
+</head>
+<body>
+<script>
+    function maxValue(a,b,c){
+        let max = a;
+        if(b > max)
+            max = b;
+        if(c > max)
+            max = c;
+        return max;
+    }
+    let value_a = parseFloat(prompt("Enter value a: "));
+    let value_b = parseFloat(prompt("Enter value b: "));
+    let value_c = parseFloat(prompt("Enter value c: "));
+    alert(maxValue(value_a,value_b,value_c));
+</script>
+</body>
+</html>

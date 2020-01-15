@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check and count occurrences of character in array</title>
+</head>
+<h3>Check and count occurrences of character in array</h3>
+<body>
+    <script>
+        let arrCharacters = ['f','abc','!','3','3','*','Tho','Xuan','Ho','95'];
+        let characters = prompt("Enter Characters: ");
+        function checkAndCountCharacter(arrCharacters,characters){
+            let count = 0;
+          for(let i = 0; i < arrCharacters.length; i++){
+              if(characters == arrCharacters[i]){
+                  count += 1;
+              }
+          }
+          if(count >= 1)
+              document.write("Characters in array and the number occurrences is "+count);
+          else
+              document.write("-1");
+
+        }
+        checkAndCountCharacter(arrCharacters,characters);
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The areage and perimeter </title>
+</head>
+<body>
+<script>
+    function areaAndPerimeterOfcircle(R) {
+       let are;
+       let Perimeter;
+       are = Math.pow(R,2)*Math.PI;
+       Perimeter = 2*R*Math.PI;
+       alert("Area of circle: "+are);
+       alert("Perimeter of circle: " + Perimeter);
+    }
+    let radius = parseFloat(prompt("Enter radius: "));
+    areaAndPerimeterOfcircle(radius);
+</script>
+</body>
+</html>

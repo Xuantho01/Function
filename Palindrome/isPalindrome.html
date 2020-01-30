@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>check Palindrome</title>
+</head>
+<body>
+<h3>Check palindrome</h3>
+<script>
+    function isPalindrome(para){
+        // let i = 0;
+        // let result = true;
+        let stringPara = para.split("");
+        stringPara.reverse();
+        stringPara = stringPara.join("");
+        if(para == stringPara){
+            return true;
+        }
+        else {
+            return false;
+        }
+        // for(i; i < (para.length -1)/2;i++){
+        //     for(let j = para.length -1; j > (para.length)/2; j--){
+        //         if(para[i] != para[j]){
+        //             result = false;
+        //            break;
+        //         }
+        //     }
+        // }
+        // if(result == true){
+        //     alert("equal");
+        // }
+        // else{
+        //     alert("not equal");
+        // }
+    }
+    let inpara = prompt("enter para: ");
+    alert(isPalindrome(inpara));
+</script>
+
+</body>
+</html>
